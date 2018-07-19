@@ -2,9 +2,10 @@
 <html lang="">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="Description" content="Ubisoft 是開發、發行與經銷互動式娛樂遊戲與服務的領導廠商，旗下擁有豐富多元的全球知名品牌包括Assassin's Creed《刺客教條》、Rabbids《瘋狂兔子》、Tom ...">
 <link rel="shortcut icon" href="https://www.bungie.net/favicon.ico?v=1">
-<title>Ubisoft Studio</title>
+<title>Ubisoft Fans Studio</title>
 <!--CSS link-->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
@@ -13,45 +14,97 @@
 <link rel="stylesheet" href="assets/dist/owl.theme.default.css">
 <link rel="stylesheet" href="assets/dist/magnific-popup.css">
 <style>
-	/*非模組化*/
 	body {
-		font-family: 微軟正黑體;
+		font-family: "Roboto", 微軟正黑體;
 	}
 	nav {
 		min-height: 4.5rem;
 	}
+    .card {
+        -webkit-transition: .23s cubic-bezier(0.4, 0.0, 0.2, 1) all;
+        transition: .23s cubic-bezier(0.4, 0.0, 0.2, 1) all;
+    }
 	/*模組*/
-	.none {
+	.cursor-none {
 		cursor: default;
+	}
+	.font-title {
+		text-transform:uppercase;
 	}
 </style>
 </head>
 
 <body>
+<!---->
+<div id="carouselExampleIndicators2" class="carousel slide shasow-lg d-lg-none" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+	<div class="carousel-item active">
+	<a href="#block-1" class="cursor-none">
+	  <img class="d-block w-100" src="assets/images/header_1.png" alt="First slide">
+		<div class="carousel-caption pb-0">
+			<h5>New DLC is now available</h5>
+			<p>Cayde-6's mysterious adventure in the land of the land</p>
+		  </div>
+		</a>
+	</div>
+    <div class="carousel-item">
+	<a href="#block-2" class="cursor-none">
+      <img class="d-block w-100" src="assets/images/header_2.gif" alt="First slide">
+		<div class="carousel-caption pb-0">
+			<img src="assets/images/header_2.png" height="80px">
+			<h5>Ubisoft first cooperates with the film</h5>
+			<!--p>Now Taiwan has supported online Chinese customer service!</p-->
+		  </div>
+	</a>
+    </div>
+    <div class="carousel-item">
+	<a href="#block-3" class="cursor-none">
+      <img class="d-block w-100" src="assets/images/header_3.png" alt="First slide">
+		<div class="carousel-caption pb-0">
+			<h5>Pixel art across generations</h5>
+			<p>Combine modern 3D game engine with sci-fi themes of the 90s</p>
+		  </div>
+		</a>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow sticky-top">
-  <a class="navbar-brand" href="#"><img src="assets/images/logo.png" width="100px"> <span class="badge badge-secondary">BETA</span></a>
+  <a class="navbar-brand" href="#"><img src="assets/images/logo.png" width="100px"> <span class="badge badge-secondary">FANS</span></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="#">首頁 <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
+        <a class="nav-link" href="#">Game</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
+        <a class="nav-link" href="#">Register</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
+        <a class="nav-link disabled" href="#">Login</a>
       </li>
     </ul>
   </div>
 </nav>
-<!---->
-<div id="carouselExampleIndicators" class="carousel slide shasow-lg" data-ride="carousel">
+<div class="bg-dark">
+<div id="carouselExampleIndicators" class="carousel slide shasow-lg d-lg-block d-none mx-xl-5 px-xl-5" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -59,29 +112,30 @@
   </ol>
   <div class="carousel-inner">
 	<div class="carousel-item active">
-	<a href="#block-1" class="none">
+	<a href="#block-1" class="cursor-none">
 	  <img class="d-block w-100" src="assets/images/header_1.png" alt="First slide">
-		<div class="carousel-caption">
-			<h5>線上DLC已經推出！</h5>
-			<p>想看到更多關於遊戲天命2資料片推出內容</p>
+		<div class="carousel-caption mb-5">
+			<h5>New DLC is now available</h5>
+			<p>Cayde-6's mysterious adventure in the land of the land</p>
 		  </div>
 		</a>
 	</div>
     <div class="carousel-item">
-	<a href="#block-2" class="none">
-      <img class="d-block w-100" src="assets/images/header_2.jpg" alt="First slide">
+	<a href="#block-2" class="cursor-none">
+      <img class="d-block w-100" src="assets/images/header_2.gif" alt="First slide">
 		<div class="carousel-caption">
-			<h5>遊戲購買保障</h5>
-			<p>給予您最安全的購物環境</p>
+			<img src="assets/images/header_2.png" height="150px">
+			<h5>Movies with Ubisoft</h5>
+			<p>In recent years, in cooperation with Warner Bros., sold game characters to the movie.</p>
 		  </div>
 	</a>
     </div>
     <div class="carousel-item">
-	<a href="#block-3" class="none">
+	<a href="#block-3" class="cursor-none">
       <img class="d-block w-100" src="assets/images/header_3.png" alt="First slide">
-		<div class="carousel-caption">
-			<h5>跨時代的像素藝術</h5>
-			<p>結合現代3D遊戲引擎與與90s的像素龐克科幻主題</p>
+		<div class="carousel-caption mb-5">
+			<h5>Pixel art across generations</h5>
+			<p>Combine modern 3D game engine with sci-fi themes of the 90s</p>
 		  </div>
 		</a>
     </div>
@@ -95,66 +149,75 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+</div>
 <!---->
 <div class="container mt-5" id="block-1">
-	<div class="raw">
+	<div class="row">
 		<div class="col-12">
 			<!--title game-->
-			<h1>今年新作</h1>
-			<p>我們帶給玩家最好的體驗。</p>
+			<h1>Game of Year</h1>
+			<p>Give our player bestest feeling</p>
 		</div>
-		<div class="col-12">
-			<!--Card info game-->
-			<!--First card-->
-			<div class="card mt-3">
+	</div>
+	<div class="row">
+		<!--Card info game-->
+		<!--First card-->
+		<div class="col-md-6 col-lg-3">
+			<div class="card mt-3 card-game">
 			  <img class="card-img-top" src="assets/images/card_1.png" alt="Card image cap">
 			  <div class="card-body">
-				<h5 class="card-title">湯姆克蘭西：全境封鎖 2</h5>
-				<p class="card-text"> Ubisoft 於剛剛確定，《湯姆克蘭西：全境封鎖2》正在開發中，預定於2018 E3 電玩展正式揭露。 《湯姆克蘭西：全境封鎖》是款線上開放世界角色扮演 ...</p>
-				<a href="https://tomclancy-thedivision.ubisoft.com/game/en-us/beta" class="btn btn-warning">註冊測試版</a>
+				<h5 class="card-title font-title">Tom Clancy's The Division 2</h5>
+				<p class="card-text">Various factions, vying for power in the wake of the crisis, are aiming to claim DC’s future for themselves. Only Division agents are equipped to take...</p>
+				<a href="https://tomclancy-thedivision.ubisoft.com/game/en-us/beta" class="btn btn-warning">BETA</a>
 			  </div>
 			</div>
-			<!--2 card-->
-			<div class="card mt-3">
+		</div>
+						<!--2 card-->
+		<div class="col-md-6 col-lg-3">
+			<div class="card mt-3 card-game">
 			  <img class="card-img-top" src="assets/images/card_2.jpg" alt="Card image cap">
 			  <div class="card-body">
-				<h5 class="card-title">刺客教條：奧德賽</h5>
-				<p class="card-text">刺客教條：奧德賽》新作閃電發表，歡迎來到斯巴達！ 太突然了！Ubisoft 稍早全球曝光《刺客教條》系列新作《刺客教條：奧德賽》（Assassin's Creed ...</p>
-				<a href="#" class="btn btn-danger">立即預購</a>
+				<h5 class="card-title font-title">Assassin’s Creed</h5>
+				<p class="card-text">Write your own epic odyssey and become a legendary Spartan hero in Assassin's Creed® Odyssey, an inspiring adventure where you must forge your destiny and define your own path in a world...</p>
+				<a href="#" class="btn btn-danger">PRE-ODER</a>
 			  </div>
 			</div>
-			<!--3 card-->
-			<div class="card mt-3">
-			  <img class="card-img-top" src="assets/images/card_3.png" alt="Card image cap"  data-toggle="modal" data-target="#Card-NEWS-1">
+		</div>
+		<!--3 card-->
+		<div class="col-md-6 col-lg-3">
+			<div class="card mt-3 card-game">
+			  <img class="card-img-top" src="assets/images/card_3.gif" alt="Card image cap"  data-toggle="modal" data-target="#Card-NEWS-1">
 			  <div class="card-body">
-				<h5 class="card-title">新的資料片！</h5>
-				<p class="card-text">即將在今年中旬推出！搶先預購可獲得凱德-6神秘寶相特殊裝備(依遊戲為準)。</p>
-				<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#Card-NEWS-1">查看更多</a>
+				<h5 class="card-title font-title">The New DLC!</h5>
+				<p class="card-text">And for now on Alongside seasonal updates and live events available to every Destiny 2 player, Forsaken Annual Pass provides bonus rewards and introduces three premium ...</p>
+				<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#Card-NEWS-1">PRE-ODER</a>
 			  </div>
 			</div>
-			<!--4 card-->
-			<div class="card mt-3">
+		</div>
+		<!--4 card-->
+		<div class="col-md-6 col-lg-3">
+			<div class="card mt-3 card-game">
 			  <img class="card-img-top" src="assets/images/card_4.jpg" alt="Card image cap">
 			  <div class="card-body">
-				<h5 class="card-title">本周天命2在Bungie</h5>
-				<p class="card-text">在本週的Bungie快報，薩拉丁領主給守護者們再次獲得裝飾的機會。
-鋼鐵旗幟回來了，而且還不是第3賽季的最後一場。有對戰要贏、有階級要提升，並且還有各種獎勵等著收集呢。這也是你唯一在《天命2》的熔爐競技場享受六對六戰鬥的機會——至少下週還是啦。</p>
-				<a href="https://bungie.net/" class="btn btn-danger"  id="block-2">前往官網</a>
+				<h5 class="card-title">THIS WEEK AT BUNGIE</h5>
+				<p class="card-text">Iron Banner is back, and not even for the last time in Season 3. There are matches to be won, ranks to earn, and rewards to collect. This is also your one and only chance to enjoy...</p>
+				<a href="https://bungie.net/" class="btn btn-danger"  id="block-2">MORE</a>
 			  </div>
 			</div>
 		</div>
 	</div>
+				
 		<div class="row mt-4">
 			<div class="col-12">
-				<h1><i class="far fa-credit-card"></i> 安全的付費環境</h1>
-				<p>結合SSL的安全隱私技術，任您的信用卡支付更安全。</p>
+				<h1><i class="far fa-credit-card fa-sm"></i> Secure payment environment</h1>
+				<p class="ml-md-5 ml-0 mb-md-4">Combine SSL's secure privacy technology to make your credit card payment more secure.</p>
 			</div>
 			<div class="accordion my-2 col" id="accordionExample">
-			  <div class="card">
+			  <div class="card card-list">
 				<div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 				  <h5 class="mb-0">
-					<button class="btn btn-link" type="button">
-						<i class="fas fa-link mr-2"></i>什麼是安全SSL認證？
+					<button class="btn btn-link font-title" type="button">
+						<i class="fas fa-link mr-2"></i>What is SSL ?
 					</button>
 				  </h5>
 				</div>
@@ -162,55 +225,52 @@
 				<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
 				  <div class="card-body">
 					 <img src="assets/images/ssl.png" class="w-50 mb-2"><br>
-					傳輸層安全性協定，及其前身安全通訊協定是一種安全協定，目的是為網際網路通訊，提供安全及資料完整性保障。網景公司在1994年推出首版網頁瀏覽器，網景領航員時，推出HTTPS協定，以SSL進行加密，這是SSL的起源。IETF將SSL進行標準化，1999年公布第一版TLS標準檔案。
+					SSL (Secure Sockets Layer) is the standard security technology for establishing an encrypted link between a web server and a browser. This link ensures that all data passed between the web server and browsers remain private and integral. SSL is an industry standard and is used by millions of websites in the protection of their online transactions with their customers.
 				  </div>
 				</div>
 			  </div>
-			  <div class="card">
+			  <div class="card card-list">
 				<div class="card-header" id="headingTwo"  data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
 				  <h5 class="mb-0">
-					<button class="btn btn-link collapsed" type="button">
-					  <i class="fab fa-cc-visa mr-2"></i>購買後要如何退款？
+					<button class="btn btn-link collapsed font-title" type="button">
+					  <i class="fab fa-cc-visa mr-2"></i>Steam Refunds
 					</button>
 				  </h5>
 				</div>
 				<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
 				  <div class="card-body">
 					 <img src="assets/images/steam.png" class="w-50 mb-2"><br>
-					你可以用任何理由要求 Steam 進行退款。也許是你的電腦硬體不符合要求；也許你不小心買錯一款遊戲；又或者你玩了一小時發現就是不喜歡它。
-
-都沒關係。Valve 會應使用者要求，於 help.steampowered.com 網站針對購買未達 14 天且遊玩時間未達 2 小時的產品進行退款。下方有更多資訊，但如果您的狀況已超出以上退款條件，您仍然可以提出申請，我們會斟酌後做出決定。
-
-申請通過後，您將在一週內收到全額退款。款項將退還至您的 Steam 錢包或當初購買時使用的付款方式。如果 Steam 無法退款至原先的付款方式，您將會在 Steam 錢包中收到全額退款。（Steam 在您的國家所支援的某些付款方式可能無法使用交易退款，按此查看完整清單。）
+					You can request a refund for nearly any purchase on Steam—for any reason. Maybe your PC doesn't meet the hardware requirements; maybe you bought a game by mistake; maybe you played the title for an hour and just didn't like it.<br>
+					It doesn't matter. Valve will, upon request via help.steampowered.com, issue a refund for any reason, if the request is made within fourteen days of purchase, and the title has been played for less than two hours. There are more details below, but even if you fall outside of the refund rules we’ve described, you can ask for a refund anyway and we’ll take a look.
 				  </div>
 				</div>
 			  </div>
-			<div class="card">
+			<div class="card card-list">
 				<div class="card-header" id="heading0"  data-toggle="collapse" data-target="#collapse0" aria-expanded="false" aria-controls="collapse0">
 				  <h5 class="mb-0">
-					<button class="btn btn-link collapsed" type="button">
-					  <i class="fab fa-youtube mr-2"></i>持續遊戲的支援
+					<button class="btn btn-link collapsed font-title" type="button">
+					  <i class="fab fa-youtube mr-2"></i>How's it work ?
 					</button>
 				  </h5>
 				</div>
 				<div id="collapse0" class="collapse" aria-labelledby="heading0" data-parent="#accordionExample">
 				  <div class="card-body">
-					  即使遊戲過時、沒有人玩了。我們的伺服器仍含會持續運作，全年無休。您不用再擔心沒有玩這個遊戲後，伺服器被停止服務，我們不會有著個問題的。(至少是目前)
+					  Unity Multiplayer is the simplest way to create multiplayer games for Unity. It’s fast to implement and highly customizable. Unity-provided servers ensure that your players can find and play with each other.
 				  </div>
 				</div>
 			  </div>
-			  <div class="card"  id="block-3">
+			  <div class="card card-list"  id="block-3">
 				<div class="card-header" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
 				  <h5 class="mb-0">
-					<button class="btn btn-link collapsed" type="button">
-					  <i class="fab fa-xbox mr-2"></i>購買後連結帳號
+					<button class="btn btn-link collapsed font-title" type="button">
+					  <i class="fab fa-xbox mr-2"></i>xbox support
 					</button>
 				  </h5>
 				</div>
 				<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
 				  <div class="card-body">
-					如果您有具 Web 服務 (像是 Google、LinkedIn 或 Twitter) 的帳戶，您可以將它新增到您的 Microsoft 帳戶。這可以讓您在兩個帳戶之間共用特定資訊。例如，如果您連線 Google 帳戶，您可以選擇在連絡人和郵件 app 中看見您 Google 連絡人的電子郵件地址。Microsoft 不會在未經您允許的情況下，分享與您的 Microsoft 帳戶關聯的資訊。如果您需要更多服務的話，請洽
-					  <a href="https://support.microsoft.com/">獲取官方支援...</a>
+					Xbox Live is where your gaming life comes together with the games you love, the friends you play with, and the community that defines you.
+					  <a href="https://support.microsoft.com/">Get more support...</a>
 				  </div>
 				</div>
 			  </div>
@@ -219,18 +279,18 @@
 	<!--Block step-->
 <div class="raw">
 	<div class="col-12 mt-4">
-		<h1>遊戲藝術圖</h1>
-		<p>這些，就是玩家看不到的心血。</p>
+		<h1>Game Art</h1>
+		<p>These are the efforts that the player can't see.</p>
 	</div>
-	<div class="col-12" data-toggle="tooltip" data-placement="top" title="對著圖片向右滑動可進行瀏覽">
+	<div class="col-12" data-toggle="tooltip" data-placement="top" title="Swipe right to the image to browse" >
 		<div class="owl-carousel">
-		  <div class="mx-2"> <a href="assets/images/pin/01.jpg"><img src="assets/images/pin/_01.jpg"></a></div>
-		  <div class="mx-2"> <a href="assets/images/pin/02.jpg"><img src="assets/images/pin/_02.jpg"></a></div>
-		  <div class="mx-2"> <a href="assets/images/pin/03.jpg"><img src="assets/images/pin/_03.jpg"></a></div>
-		  <div class="mx-2"> <a href="assets/images/pin/04.jpg"><img src="assets/images/pin/_04.jpg"></a></div>
-		  <div class="mx-2"> <a href="assets/images/pin/05.jpg"><img src="assets/images/pin/_05.jpg"></a></div>
-		  <div class="mx-2" > <a href="assets/images/pin/06.jpg"><img src="assets/images/pin/_06.jpg"></a></div>
-		  <div class="mx-2"> <a href="assets/images/pin/07.jpg"><img src="assets/images/pin/_07.jpg"></a></div>
+		  <div class="mx-2 shadow"> <a href="assets/images/pin/01.jpg"><img src="assets/images/pin/0_01.jpg"></a></div>
+		  <div class="mx-2 shadow"> <a href="assets/images/pin/02.jpg"><img src="assets/images/pin/0_02.jpg"></a></div>
+		  <div class="mx-2 shadow"> <a href="assets/images/pin/03.jpg"><img src="assets/images/pin/0_03.jpg"></a></div>
+		  <div class="mx-2 shadow"> <a href="assets/images/pin/04.jpg"><img src="assets/images/pin/0_04.jpg"></a></div>
+		  <div class="mx-2 shadow"> <a href="assets/images/pin/05.jpg"><img src="assets/images/pin/0_05.jpg"></a></div>
+		  <div class="mx-2 shadow" > <a href="assets/images/pin/06.jpg"><img src="assets/images/pin/0_06.jpg"></a></div>
+		  <div class="mx-2 shadow"> <a href="assets/images/pin/07.jpg"><img src="assets/images/pin/0_07.jpg"></a></div>
 		</div>
 	</div>
 </div>
@@ -243,19 +303,19 @@
 			<div class="col-12">
 				<!--logo-->
 				<img src="assets/images/icon.png" alt="碧育遊戲LOGO" width="100rem">
-				<p class="mt-2 h5 font-italic">台灣Ubisoft遊戲服務公司。</p>
+				<p class="mt-2 h5 font-italic">Taiwan Ubisoft Game Services.</p>
 			</div>
 			<div class="col-12 pl-2">
 				<!--info-->
-				<p class="h3 font-weight-bold"><i class="fas fa-headset mr-2"></i>更多服務支援</p>
-				<a href="https://ubisoft.com/">碧育官方網頁</a><br>
-				<a href="https://bungie.net/">Bungie.net 天命官網</a><br>
-				<a href="https://xbox.com/">黑暗企業</a><br>
-				<a href="index.html">本站首頁</a><br>
+				<p class="h3 font-weight-bold"><i class="fas fa-headset mr-2"></i>More service support</p>
+				<a href="https://ubisoft.com/">Ubisoft official website</a><br>
+				<a href="https://bungie.net/">Bungie.net</a><br>
+				<a href="https://xbox.com/">SuckSoft</a><br>
+				<a href="index.html">Back to Website (This page)</a><br>
 			</div>
 			<div class="col-12">
 				<!--info-->
-				<p>版權所有(C)1990-2018 Ubisoft Game Studio Fans.</p>
+				<p>Copyright (C)1990-2018 Ubisoft Game Studio Fans.</p>
 			</div>
 		</div>
 	</div>
@@ -265,27 +325,49 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="Card-NEWS-1">文章狀態：預覽模式</h5>
+        <h5 class="modal-title" id="Card-NEWS-1">POST MODE</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-		  <h4>新的DLC資料片即將推出！</h4>
-		  <p>最近Bungie在E3展上，終於展示了最新的資料片。<br>“充滿秘密的發現和老闆的失敗，這個目的地也是全新的突襲，是第一個從頭開始設計的空間，以支持殘局內容，”Bungie談到夢想之城。
-自去年10月發布以來，Destiny 2已經有兩個內容更新，奧西里斯的Warmind和詛咒，但是遊戲並沒有與主遊戲的Leviathan分開進行全新的突襲。夢幻城市的突襲將成為其全面的第二次。根據直播，這將是一種隨著時間的推移而變化的動態體驗。
-自2013年第一個Destiny發布以來，玩家只能使用各種槍械來取出光明的敵人。隨著Forsaken，Bungie宣布他們將包括弓箭作為新武器類型。
-星期二的流也顯示了Gambit，這是一種全新的遊戲模式，旨在將PVP和PVE結合起來。</p>
+			<div id="article-container" class="grid">
+			<h1 class="section-header">
+				This Week At Bungie - 07/12/2018
+			</h1>
+			<div class="metadata section-subheader">Jul 12 - DeeJ</div>
+			<div class="content text-content">
+				<div>This week at Bungie, Lord Saladin is ornamenting the Guardians again.</div><div>Iron Banner is back, and not even for the last time in Season 3. There are matches to be won, ranks to earn, and rewards to collect. This is also your one and only chance to enjoy some 6v6 combat in the <i>Destiny 2</i> Crucible – for one more week, at least.</div><div><br></div><div>Update 1.2.3 lands on Tuesday. With it, Quickplay will evolve to become a 6v6 engagement. Between now and then, our old friend the Iron Lord is the only one with the hookup.</div><div><br></div><div><i>That’s great, Bungie, but what about us solo players?</i></div><div>Rumble is also coming back in Update 1.2.3!</div><div><br></div><div><i>What about those of us who aren’t Crucible warriors, Bungie?</i></div><div>We have other news to report for those of you who prefer to focus your fire on the enemies of humanity.</div><div><br></div><div>Let’s dig in and take a look at everything in our immediate future.</div><div><br></div><div><hr></div><div><br></div><div><b><big>Bountiful Harvest</big></b></div><div><br></div><div>
+			<img src="https://www.bungie.net/pubassets/pkgs/112/112914/07122018_Bounties.png?cv=3983621215&av=1627990981" class="w-100">
+			<br></div><div>When you light out into the wild in search of action and adventure, the fighting is all the sweeter when you have more ways to reap the rewards. In Update 1.2.3, we’re expanding on that experience with new bounties for <i>Destiny 2</i>. <b>Senior Design Lead Tyson Green</b>, who some suspect is actually the Cryptarch in his spare time, has some thoughts on what we want to accomplish with this addition to the player experience.<br></div><div><br></div><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div><b>Tyson</b>: With the original launch of <i>Destiny</i>, bounties provided a set of daily objectives that players could use to advance faction reputation or earn XP to level up their gear. These were removed to streamline the activity experience in <i>Destiny 2</i> and reduce the number of “chores” that players felt compelled to complete every day. In retrospect, we realized that was an over-correction, and optional daily objectives to achieve specific goals are something we want to restore.</div><div><br></div><div>The bounties returning to <i>Destiny 2</i> in Update 1.2.3 are a return to most of the properties of bounties in <i>The Taken King</i>. They will be obtained from a variety of vendors, they will generally award XP and faction reputation (though some will offer even better rewards), and can be redeemed “in the field” to immediately claim your rewards. In <i>Forsaken</i>, you may also see some bounties drop in the wild.</div><div><br></div><div>There are two new mechanics. Bounties will expire if left uncompleted, and acquiring them will cost a small amount of Glimmer. We wanted to avoid the “<i>grab every bounty you see until your inventory is packed and sort them out later</i>” experience without constraining players to the tiny inventory they found in previous iterations of the game.</div><div><br></div><div>In <i>Forsaken</i>, more vendors will have more bounties on offer, and some will provide Legendary (or better) rewards for completing them.</div></blockquote><div><br></div><div>It’s fair to observe that we didn’t answer every question you might ask about the return of bounties. What would be the fun in that? You’ll discover exactly how they work and where you can find them next week, and in all the weeks that will follow.</div><div><br></div><div><hr></div><div><br></div><div><b><big>For the Kids</big></b></div><div><br></div><div>At the time of this posting, one storm is dissipating online while another one gathers in real life. The GuardianCon fundraising stream is over, with millions of dollars raised for charity. Once again, we are left stunned by the passion and goodwill exhibited by the community. Congratulations to everyone who pitched in and ran their leg of the marathon.</div><div><br></div><div>Tomorrow, the after party begins inside the Tampa Convention Center, and the celebration is shaping up to be thunderous. We’ll be on hand to commit all challengers to teams of four to battle each other in Gambit. This is your final blog reminder that we’re also hosting an epic clash of content creators you may know on their mainstage.</div><div><br></div>
+			</div><div><br></div><div>Keep an eye on 'em. They’re not done showing off what awaits you this September.</div><div><br></div><div><hr></div><div><br></div><div><b><big>Coming Attractions</big></b></div><div><br></div><div>
+			<img src="https://www.bungie.net/pubassets/pkgs/112/112914/07122018_Patch_Preview.jpg?cv=3983621215&av=1627990981" class="w-100">
+			<br></div><div><br></div><div>Update 1.2.3 will deploy on Tuesday, July 17. Destiny Player Support will have more information concerning deployment times and download sizes <a href="https://www.bungie.net/en/Help/Article/13125" title="" target="">here</a>, but we have a quick preview of what to expect next week:</div><div><br></div><div><b>Misc Quality of Life Changes</b></div><div><ul><li>PC Clan Chat: Adds a new in-game text chat channel that allows online <i>Destiny 2</i> clan members to communicate.<br></li><li>Once all Mercury Forge weapons have been obtained, they become available for direct purchase from Brother Vance in the Lighthouse (on the second vendor page).<br></li><li>Removed momentum from Heroic Adventures.<br></li><li>The Pursuits inventory bucket has been moved to the top of the inventory categories.<br></li><li>Commas have been added to large numbers as separators on the IGCR and PGCR.<br></li></ul></div><div><br></div><div><b>Exotic Armor Fixes</b></div><div><ul><li>Fixed an issue that was causing targets marked by Sanguine Alchemy to produce orbs when defeated.<br></li><li>Fixed an issue that caused Starfire Protocol to not work with Dawnblade's Attunement of Sky ability path.&nbsp;<br></li><li>Fixed an issue that prevented Warlock melee attack damage when using the Ophidian Aspect Exotic and the Hive Swords or orb carry objects.<br></li></ul></div><div><br></div><div>Additionally, some Heroic Strike Modifiers will be given slight adjustments in response to player feedback. <b>Test Engineer Drew Martineau</b> has a quick round of developer commentary on the goal of these changes:</div><div><br></div><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div>Hey all,</div><div><br></div><div>Since the release of Update 1.1.3, we’ve been collecting player feedback concerning Heroic strike modifiers. On Tuesday, three of the more punishing modifiers will receive some adjustments. Ultimately, we want your Power, stats, and armor modifications to matter, and we realized that our debuff modifiers were a little too powerful to allow players to see their impact. Here’s what you can expect:</div><div><br></div><div><div><ul><li><u>Blackout</u>: We wanted to ensure that enemy melees are threatening, but this shouldn't dismiss a player’s Power progression or the stats they chose to invest in with their armor. As such, this modifier is changing somewhat: it still increases enemy melee damage significantly, but it’s now no longer a guarantee of players being defeated by a single melee from many enemies. Be careful, though! If you’re not at the recommended Power for the Heroic Strikes playlist, your enemies will be more powerful and pack a harder punch.<br></li></ul><br><ul><li><u>Grounded</u>: There are many times players are considered "airborne" when they're not actually jumping. To account for that, we are reducing the damage threshold so players aren't punished for things outside of their control. Additionally, we’re looking to prevent players from falling to their demise from a height of 2 meters, just as they happen to land on a rock or some other small object.<br></li></ul><br><ul><li><u>Glass</u>: This modifier reduces a Guardian’s shields and health while increasing recovery. We slightly reduced the impact of this modifier to better enable players to see the effects of their overall Power progression over time.<br></li></ul></div><div><br></div></div></blockquote>Stay tuned to bungie.net next week for the full patch notes, expected to become available at 9 a.m. PDT on Tuesday, July 17, 2018.<div><br></div><div><hr></div><div><br></div><div><b><big>Matrix Reloaded</big></b></div><div><br></div><div>Over the past few months, we’ve been testing a new feature called the Prismatic Matrix. When we <a href="https://www.bungie.net/en/News/Article/46825" title="" target="">first announced</a> this new reward system, we stated our goals for the experiment:</div><div><br></div><div><ul><li>Give players more control over how they earn Eververse items<br></li><li>Offer a more predictable path each week that guarantees access to specific items<br></li><li>Drop fewer duplicate items<br></li></ul></div><div><br></div><div>
+			<img src="https://www.bungie.net/pubassets/pkgs/112/112914/07122018_Prismatic_Matrix.jpg?cv=3983621215&av=1627990981" class="w-100">
+			<br></div><div><br></div><div><div>This week, the user interface calls specific attention to the limited time of the feature. To explain our previous objectives and future plans, here are some thoughts from the design team:</div><div><br></div></div><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div><div>The original intent of the Prismatic Matrix was for it to be a special event—something to help players round out their collections, as the odds of earning the items that were eluding them improved as they continued to earn Bright Engrams. We had a limited number of weeks scheduled, designed to keep repetition to a minimum. That schedule of curated offerings is coming to an end, so the feature will be going on temporary hiatus starting next week. Thanks to some good feedback about this new feature, we’ve learned how we can make it better, so we’ll continue to support it in <i>Forsaken</i>. We look forward to your continued feedback and are excited to relaunch the Prismatic Matrix in the next season of <i>Destiny 2</i>.</div></div></blockquote><div><br></div><div>There will be more on this topic soon. Before the launch in September, we’ll update this conversation with a full preview for how the Eververse Trading Company will be evolving to better serve you.<br></div><div><br></div><div><hr></div><div><br></div><div><b><big>The Player Support Report</big></b></div><div><br></div><div>
+			<img src="https://www.bungie.net/pubassets/pkgs/112/112914/D2_DOC.gif?cv=3983621215&av=1627990981" class="w-100">
+			<br></div><div><br></div>Community management involves a lot more than going to conventions and posing for pictures. Serving the Guardians is a team effort, and some of us are more tactical than others. The specialists on the Player Support Team are experts on how the game evolves over time.<br><br>This is their report.<div><br></div><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div><div><b><u>Moments of Triumph</u></b></div></div><div><div>On July 7, we launched Moments of Triumph on Bungie.net and the Destiny Companion. Destiny 2 players can now <a href="https://www.bungie.net/en/Profile/Triumphs/" title="" target="">track their Triumphs online</a> before they go live in-game with the Solstice of Heroes live event. The following is vital information that players should be aware of for Moments of Triumph:</div></div><div><ul><li><b>Progress toward Triumphs and event rewards may be lost if players delete any characters on their account</b>. For the best experience, it is recommended that players do not delete any characters until all desired rewards have been redeemed and Solstice of Heroes concludes on August 28, 2018.<br></li><li>Players will not be able to redeem completed Triumphs for points or rewards until <b>Solstice of Heroes goes live in Destiny 2 on July 31, 2018</b>.<br></li></ul></div><div><div><br></div></div><div><div>For more information, players should visit the <a href="https://www.bungie.net/en/Help/Article/46969" title="" target="">Moments of Triumph Guide</a> and <a href="https://www.bungie.net/en/Help/Article/46970" title="" target="">FAQ</a>.</div></div><div><div><br></div></div><div><div><b><u>Starting Lines for World First</u></b></div></div><div><div>Next Tuesday, July 17, at 10 a.m. PDT, Destiny 2 Update 1.2.3 will become available to players. To allow players to download and install this update and prepare for the launch of Prestige raid lairs, <b>“Leviathan, Eater of Worlds” and “Leviathan, Spire of Stars” will be temporarily disabled</b>. These activities will become available for players to compete for World First at the following times:</div></div><div><div><ul><li>“Leviathan, Eater of Worlds” Prestige, 11 a.m. PDT on July 17<br></li><li>“Leviathan, Spire of Stars” Prestige, 10 a.m. PDT on July 18<br></li></ul></div></div><div><div><br></div></div><div><div>For the <i>Destiny 2</i> Update 1.2.3 deployment schedule, players should visit our <a href="https://www.bungie.net/en/Help/Article/13125" title="" target="">Destiny Server and Update Status</a> page.</div></div><div><div><br></div></div><div><div><b>Saxophone</b></div></div><div><div>Last week, we conducted the Destiny 2 free trial weekend on Battle.net. While players who participated can choose to keep Destiny 2 installed on their PC for use in future free trial weekends, they will receive SAXOPHONE errors if they do not own Destiny 2 when they attempt to launch the game outside of promotional periods.</div></div><div><div><br></div></div><div><div>For more information regarding trial access, players should visit our <a href="https://www.bungie.net/en/Help/Article/46488" title="" target=""><i>Destiny 2</i> Trial</a> help article.</div></div></blockquote><div><div><br></div><div><hr></div><div><br></div><div><b><big>Motion Picture Arts and Sciences</big></b></div><div><br></div><div>
+			<img src="https://www.bungie.net/pubassets/pkgs/112/112914/D2_movie_of_the_week.gif?cv=3983621215&av=1627990981" class="w-100">
+			<br></div><div><br></div><div>People ask us a lot of questions about how we choose these weekly honors. The hunt begins when we look at our <a href="https://www.bungie.net/en/Community/Creations" title="" target="">Creations</a> page for entries. The #MOTW tag helps us know you’re submitting for competition. From there, we pick something that catches our eye. With the usual judges hosting sweaties in Tampa (Florida is <i>so hot </i>right now), I thought I’d assemble an alternate panel that includes some of my favorite community artists. Since each them leveraged their artistic expertise to lend a hand in celebrating excellence in multimedia, there are no points for second place.</div><div><br></div><div>Get ready to thank the academy. Here are your Movies of the Week.</div><div><br></div><div><b>Selected by <a href="https://twitter.com/ianpesty" title="" target="">@ianpesty</a></b></div><div>Best Crucible Teamtage: <a href="https://www.bungie.net/en/Community/Detail?itemId=246884208" title="" target="">Just Raid It</a></div><div>
+			<iframe class="youtube-player" style="" type="text/html" width="192px" height="108px" src="https://www.youtube.com/embed/UnmR3oED4YM?wmode=transparent&amp;rel=0&amp;fs=1" frameborder="0" allowfullscreen="">
+			</iframe>
+			<br></div><div><br></div><div><b>Selected by <a href="https://twitter.com/KobOneArt" title="" target="">@KobOneArt</a></b></div><div>Best Musical Number: <a href="https://www.bungie.net/en/Community/Detail?itemId=246854750" title="" target="">Raining Men</a></div><div>
+			<iframe class="youtube-player" style="" type="text/html" width="192px" height="108px" src="https://www.youtube.com/embed/CVnvJZArQuc?wmode=transparent&amp;rel=0&amp;fs=1" frameborder="0" allowfullscreen="">
+			</iframe>
+			<br></div><div><br></div><div><b>Selected by <a href="https://twitter.com/Boompus_III" title="" target="">@Boompus_III</a></b></div><div>Best Multi-BOOP: <a href="https://www.bungie.net/en/Community/Detail?itemId=246884117" title="" target="">1 Shot, 4 Kills</a></div><div>
+			<iframe class="youtube-player" style="" type="text/html" width="192px" height="108px" src="https://www.youtube.com/embed/pBRLeNtmuh0?wmode=transparent&amp;rel=0&amp;fs=1" frameborder="0" allowfullscreen="">
+			</iframe>
+			<br></div><div><br></div><div>Congratulations to all the winners. Please hold until next week before you start to ask dmg04 and Cozmo when you can expect to find your prize emblems. In my infinite wisdom, I put them on the road, and I never learned how to do that thing.</div><div><br></div><div><hr></div><div><br></div><div>When your rightful community managers are back in the saddle, there will be patch notes and deployment status updates and all the hard work that gets done by the real heroes. It’s been my pleasure to return to my roots while they put on their show. Hope I wasn’t overly verbose. Old habits die harder than raid bosses.</div><div><br></div><div>DeeJ, out.</div></div>
+			</div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">BACK</button>
         <!--button type="button" class="btn btn-primary"></button-->
       </div>
     </div>
   </div>
 </div>
 <!--Script-->
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
@@ -306,6 +388,34 @@
 	//顯示提示文字
 	$(function () {
 	  $('[data-toggle="tooltip"]').tooltip()
+	})
+    //針對卡片
+    var list = document.querySelectorAll(".card-game");
+    for(var index in list){
+        if(list[index] == null) continue;
+        try{
+        $(list[index]).hover(function(){
+            $(this).addClass(['shadow-lg','my-4']);
+        },function(){
+            $(this).removeClass(['shadow-lg','my-4']);
+        });}catch(e){}
+    }
+    	$(function () {
+	  $('[data-toggle="tooltip"]').tooltip()
+	})
+    //摺疊卡片陰影
+    var list = document.querySelectorAll(".card-list");
+    for(var index in list){
+        if(list[index] == null) continue;
+        try{$(list[index]).hover(function(){
+            $(this).addClass(['shadow-lg']);
+        },function(){
+            $(this).removeClass(['shadow-lg']);
+        });}catch(e){}
+    }
+	//頁首時間
+	$('.carousel').carousel({
+	  interval: 5000
 	})
 </script>
 </body>
