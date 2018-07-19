@@ -1,0 +1,46 @@
+[
+    {
+        "title":"湯姆克蘭西：全境封鎖 2",
+        "content":"Ubisoft 於剛剛確定，《湯姆克蘭西：全境封鎖2》正在開發中，預定於2018 E3 電玩展正式揭露。 《湯姆克蘭西：全境封鎖》是款線上開放世界角色扮演 ...",
+        "image":"assets/images/card_1.png",
+        "action":{
+            "text":"註冊測試版",
+            "link":"https://tomclancy-thedivision.ubisoft.com/game/en-us/beta",
+			"toggle":" ",
+			"target":" "
+        }
+    },
+    {
+        "title":"刺客教條：奧德賽",
+        "content":"刺客教條：奧德賽》新作閃電發表，歡迎來到斯巴達！ 太突然了！Ubisoft 稍早全球曝光《刺客教條》系列新作《刺客教條：奧德賽》（Assassin's Creed ...",
+        "image":"assets/images/card_2.jpg",
+        "action":{
+            "text":"立即預購",
+            "link":"#",
+			"toggle":" ",
+			"target":" "
+        }
+    },
+    {
+        "title":"新的資料片！",
+        "content":"即將在今年中旬推出！搶先預購可獲得凱德-6神秘寶相特殊裝備(依遊戲為準)。",
+        "image":"assets/images/card_3.png",
+        "action":{
+            "text":"查看更多",
+            "link":"#",
+			"toggle":"modal",
+			"target":"#Card-NEWS-1"
+        }
+    },
+        {
+        "title":"《天命2》更新檔1.2.3版 ",
+        "content":"在本週的Bungie快報，薩拉丁領主給守護者們再次獲得裝飾的機會。鋼鐵旗幟回來了，而且還不是第3賽季的最後一場。有對戰要贏、有階級要提升，並且還有各種獎勵等著收集呢。這也是你唯一在《天命2》的熔爐競技場享受六對六戰鬥的機會——至少下週還是啦。",
+        "image":"assets/images/card_4.jpg",
+        "action":{
+            "text":"前往官網",
+            "link":"https://bungie.net/",
+			"toggle":" ",
+			"target":" "
+        }
+    }
+]

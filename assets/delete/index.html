@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="Description" content="Ubisoft 是開發、發行與經銷互動式娛樂遊戲與服務的領導廠商，旗下擁有豐富多元的全球知名品牌包括Assassin's Creed《刺客教條》、Rabbids《瘋狂兔子》、Tom ...">
+<link rel="shortcut icon" href="https://www.bungie.net/favicon.ico?v=1">
+<title>Ubisoft Studio</title>
+<!--CSS link-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<!--for script-->
+<link rel="stylesheet" href="assets/dist/owl.carousel.min.css">
+<link rel="stylesheet" href="assets/dist/owl.theme.default.css">
+<link rel="stylesheet" href="assets/dist/magnific-popup.css">
+<style>
+	/*非模組化*/
+	body {
+		font-family: 微軟正黑體;
+	}
+	nav {
+		min-height: 4.5rem;
+	}
+    .card {
+        -webkit-transition: .23s cubic-bezier(0.4, 0.0, 0.2, 1) all;
+        transition: .23s cubic-bezier(0.4, 0.0, 0.2, 1) all;
+    }
+	/*模組*/
+	.cursor-none {
+		cursor: default;
+	}
+</style>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow sticky-top">
+  <a class="navbar-brand" href="#"><img src="assets/images/logo.png" width="100px"> <span class="badge badge-secondary">MOBILE</span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">首頁 <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!---->
+<div id="carouselExampleIndicators" class="carousel slide shasow-lg" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+	<div class="carousel-item active">
+	<a href="#block-1" class="cursor-none">
+	  <img class="d-block w-100" src="assets/images/header_1.png" alt="First slide">
+		<div class="carousel-caption">
+			<h5>線上DLC已經推出！</h5>
+			<p>想看到更多關於遊戲天命2資料片推出內容</p>
+		  </div>
+		</a>
+	</div>
+    <div class="carousel-item">
+	<a href="#block-2" class="cursor-none">
+      <img class="d-block w-100" src="assets/images/header_2.jpg" alt="First slide">
+		<div class="carousel-caption">
+			<h5>遊戲購買保障</h5>
+			<p>給予您最安全的購物環境</p>
+		  </div>
+	</a>
+    </div>
+    <div class="carousel-item">
+	<a href="#block-3" class="cursor-none">
+      <img class="d-block w-100" src="assets/images/header_3.png" alt="First slide">
+		<div class="carousel-caption">
+			<h5>跨時代的像素藝術</h5>
+			<p>結合現代3D遊戲引擎與與90s的像素龐克科幻主題</p>
+		  </div>
+		</a>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<!---->
+<div class="container mt-5" id="block-1">
+	<div class="raw">
+		<div class="col-12">
+			<!--title game-->
+			<h1>今年新作</h1>
+			<p>我們帶給玩家最好的體驗。</p>
+		</div>
+		<div class="col-12" >
+            <!--Rendering the page by using vue.js-->
+            <div id="cards">
+                <div v-for="item in cardList" class="card mt-3 card-game">
+                  <img class="card-img-top" v-bind:src="item.image" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">{{item.title}}</h5>
+                    <p class="card-text">{{item.content}}</p>
+                    <a v-bind:href="item.action.link" class="btn btn-warning" :data-toggle="item.action.toggle" :data-target="item.action.target">{{item.action.text}}</a>
+                  </div>
+                </div>
+            </div>
+			<!--the end of rendering part-->
+		</div>
+	</div>
+		<div class="row mt-4">
+			<div class="col-12">
+				<h1><i class="far fa-credit-card"></i> 安全的付費環境</h1>
+				<p>結合SSL的安全隱私技術，任您的信用卡支付更安全。</p>
+			</div>
+			<div class="accordion my-2 col" id="accordionExample">
+			  <div class="card card-list">
+				<div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+				  <h5 class="mb-0">
+					<button class="btn btn-link" type="button">
+						<i class="fas fa-link mr-2"></i>什麼是安全SSL認證？
+					</button>
+				  </h5>
+				</div>
+
+				<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+				  <div class="card-body">
+					 <img src="assets/images/ssl.png" class="w-50 mb-2"><br>
+					傳輸層安全性協定，及其前身安全通訊協定是一種安全協定，目的是為網際網路通訊，提供安全及資料完整性保障。網景公司在1994年推出首版網頁瀏覽器，網景領航員時，推出HTTPS協定，以SSL進行加密，這是SSL的起源。IETF將SSL進行標準化，1999年公布第一版TLS標準檔案。
+				  </div>
+				</div>
+			  </div>
+			  <div class="card card-list">
+				<div class="card-header" id="headingTwo"  data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" type="button">
+					  <i class="fab fa-cc-visa mr-2"></i>購買後要如何退款？
+					</button>
+				  </h5>
+				</div>
+				<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				  <div class="card-body">
+					 <img src="assets/images/steam.png" class="w-50 mb-2"><br>
+					你可以用任何理由要求 Steam 進行退款。也許是你的電腦硬體不符合要求；也許你不小心買錯一款遊戲；又或者你玩了一小時發現就是不喜歡它。
+
+都沒關係。Valve 會應使用者要求，於 help.steampowered.com 網站針對購買未達 14 天且遊玩時間未達 2 小時的產品進行退款。下方有更多資訊，但如果您的狀況已超出以上退款條件，您仍然可以提出申請，我們會斟酌後做出決定。
+
+申請通過後，您將在一週內收到全額退款。款項將退還至您的 Steam 錢包或當初購買時使用的付款方式。如果 Steam 無法退款至原先的付款方式，您將會在 Steam 錢包中收到全額退款。（Steam 在您的國家所支援的某些付款方式可能無法使用交易退款，按此查看完整清單。）
+				  </div>
+				</div>
+			  </div>
+			<div class="card card-list">
+				<div class="card-header" id="heading0"  data-toggle="collapse" data-target="#collapse0" aria-expanded="false" aria-controls="collapse0">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" type="button">
+					  <i class="fab fa-youtube mr-2"></i>持續遊戲的支援
+					</button>
+				  </h5>
+				</div>
+				<div id="collapse0" class="collapse" aria-labelledby="heading0" data-parent="#accordionExample">
+				  <div class="card-body">
+					  即使遊戲過時、沒有人玩了。我們的伺服器仍含會持續運作，全年無休。您不用再擔心沒有玩這個遊戲後，伺服器被停止服務，我們不會有著個問題的。(至少是目前)
+				  </div>
+				</div>
+			  </div>
+			  <div class="card card-list"  id="block-3">
+				<div class="card-header" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" type="button">
+					  <i class="fab fa-xbox mr-2"></i>購買後連結帳號
+					</button>
+				  </h5>
+				</div>
+				<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+				  <div class="card-body">
+					如果您有具 Web 服務 (像是 Google、LinkedIn 或 Twitter) 的帳戶，您可以將它新增到您的 Microsoft 帳戶。這可以讓您在兩個帳戶之間共用特定資訊。例如，如果您連線 Google 帳戶，您可以選擇在連絡人和郵件 app 中看見您 Google 連絡人的電子郵件地址。Microsoft 不會在未經您允許的情況下，分享與您的 Microsoft 帳戶關聯的資訊。如果您需要更多服務的話，請洽
+					  <a href="https://support.microsoft.com/">獲取官方支援...</a>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</div>
+	<!--Block step-->
+<div class="raw">
+	<div class="col-12 mt-4">
+		<h1>遊戲藝術圖</h1>
+		<p>這些，就是玩家看不到的心血。</p>
+	</div>
+	<div class="col-12" data-toggle="tooltip" data-placement="top" title="對著圖片向右滑動可進行瀏覽" >
+		<div class="owl-carousel">
+		  <div class="mx-2 shadow"> <a href="assets/images/pin/01.jpg"><img src="assets/images/pin/_01.jpg"></a></div>
+		  <div class="mx-2 shadow"> <a href="assets/images/pin/02.jpg"><img src="assets/images/pin/_02.jpg"></a></div>
+		  <div class="mx-2 shadow"> <a href="assets/images/pin/03.jpg"><img src="assets/images/pin/_03.jpg"></a></div>
+		  <div class="mx-2 shadow"> <a href="assets/images/pin/04.jpg"><img src="assets/images/pin/_04.jpg"></a></div>
+		  <div class="mx-2 shadow"> <a href="assets/images/pin/05.jpg"><img src="assets/images/pin/_05.jpg"></a></div>
+		  <div class="mx-2 shadow" > <a href="assets/images/pin/06.jpg"><img src="assets/images/pin/_06.jpg"></a></div>
+		  <div class="mx-2 shadow"> <a href="assets/images/pin/07.jpg"><img src="assets/images/pin/_07.jpg"></a></div>
+		</div>
+	</div>
+</div>
+<!--main part end-->
+</div>
+<!--for footer-->
+<footer class="bg-dark text-light pt-5">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<!--logo-->
+				<img src="assets/images/icon.png" alt="碧育遊戲LOGO" width="100rem">
+				<p class="mt-2 h5 font-italic">台灣Ubisoft遊戲服務公司。</p>
+			</div>
+			<div class="col-12 pl-2">
+				<!--info-->
+				<p class="h3 font-weight-bold"><i class="fas fa-headset mr-2"></i>更多服務支援</p>
+				<a href="https://ubisoft.com/">碧育官方網頁</a><br>
+				<a href="https://bungie.net/">Bungie.net 天命官網</a><br>
+				<a href="https://xbox.com/">黑暗企業</a><br>
+				<a href="index.html">本站首頁</a><br>
+			</div>
+			<div class="col-12">
+				<!--info-->
+				<p>版權所有(C)1990-2018 Ubisoft Game Studio Fans.</p>
+			</div>
+		</div>
+	</div>
+</footer>
+<!--hideen-->
+<div class="modal fade" id="Card-NEWS-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Card-NEWS-1">文章狀態：預覽模式</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		  <h4>新的DLC資料片即將推出！</h4>
+		  <p>最近Bungie在E3展上，終於展示了最新的資料片。<br>“充滿秘密的發現和老闆的失敗，這個目的地也是全新的突襲，是第一個從頭開始設計的空間，以支持殘局內容，”Bungie談到夢想之城。
+自去年10月發布以來，Destiny 2已經有兩個內容更新，奧西里斯的Warmind和詛咒，但是遊戲並沒有與主遊戲的Leviathan分開進行全新的突襲。夢幻城市的突襲將成為其全面的第二次。根據直播，這將是一種隨著時間的推移而變化的動態體驗。
+自2013年第一個Destiny發布以來，玩家只能使用各種槍械來取出光明的敵人。隨著Forsaken，Bungie宣布他們將包括弓箭作為新武器類型。
+星期二的流也顯示了Gambit，這是一種全新的遊戲模式，旨在將PVP和PVE結合起來。</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+        <!--button type="button" class="btn btn-primary"></button-->
+      </div>
+    </div>
+  </div>
+</div>
+<!--Script-->
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+<!--for jquery javascript-->
+<script src="assets/dist/owl.carousel.min.js"></script>
+<script src="assets/dist/jquery.magnific-popup.min.js"></script>
+<script>
+	//輪轉圖片
+	$(document).ready(function(){
+	  $(".owl-carousel").owlCarousel();
+	});
+	//輪轉圖片的圖片
+	$('.owl-carousel').magnificPopup({
+	  delegate: 'a', // child items selector, by clicking on it popup will open
+	  type: 'image'
+	  // other options
+	});
+	//顯示提示文字
+	$(function () {
+	  $('[data-toggle="tooltip"]').tooltip()
+	})
+    //針對卡片
+    var list = document.querySelectorAll(".card-game");
+    for(var index in list){
+        if(list[index] == null) continue;
+        try{
+        $(list[index]).hover(function(){
+            $(this).addClass(['shadow-lg','my-5']);
+        },function(){
+            $(this).removeClass(['shadow-lg','my-5']);
+        });}catch(e){}
+    }
+    	$(function () {
+	  $('[data-toggle="tooltip"]').tooltip()
+	})
+    //摺疊卡片陰影
+    var list = document.querySelectorAll(".card-list");
+    for(var index in list){
+        if(list[index] == null) continue;
+        try{$(list[index]).hover(function(){
+            $(this).addClass(['shadow-lg']);
+        },function(){
+            $(this).removeClass(['shadow-lg']);
+        });}catch(e){}
+    }
+    //渲染程序
+    window.addEventListener("load",()=>{
+        $.get("assets/json/list.json",e=>{
+            cards.cardList = JSON.parse(e);
+            //console.log(JSON.parse(e))
+        })
+    })
+    var cards = new Vue({
+        el: '#cards',
+        data: {
+            cardList:[]
+        },
+        updated:()=>{
+            var list = document.querySelectorAll(".card-game");
+            for(var index in list){
+                if(list[index] == null) continue;
+                try{
+                $(list[index]).hover(function(){
+                    $(this).addClass(['shadow-lg','my-5']);
+                },function(){
+                    $(this).removeClass(['shadow-lg','my-5']);
+                });}catch(e){}
+            }
+                $(function () {
+              $('[data-toggle="tooltip"]').tooltip()
+            })
+        }
+    })
+</script>
+</body>
+</html>
